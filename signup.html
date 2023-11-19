@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order food!</title>
+    </head>
+    <body>
+        <section>
+            <h1>Sign up for Fuud</h1>
+            <form action="/signup" method="POST">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required/>
+                <br/>
+                <label>
+                    Password:
+                    <input type="password" name="password" required/>
+                </label>
+                <br/>
+                <label>
+                    Repeat password:
+                    <input type="password" name="password_repeat" required/>
+                </label>
+                <button type="submit">Sign up</button>
+            </form>
+            <a href="./signin.html">Sign in instead</a>
+        </section>
+    </body>
+</html>
