@@ -2,105 +2,122 @@
 <html>
     <head>
         <title>Order food!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/bignoodletitling">
+        <link href="https://fonts.cdnfonts.com/css/ghaitsa-personal-use" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img 
-                src="http://localhost:3000/_next/static/media/junkbanklogo.69900bc4.png"
-                height="50px"
-                alt="JunkBank!"
-            />
             <nav>
-                <ul>
-                    <li>
+                <ul class="menu container">
+                    <li class="logo">
+                        <a href="#"><img src="junkbanklogo.png" alt="junkbank"></a>
+                    </li>
+                    <li class="item">
                         <a href="#">About us</a>
                     </li>
-                    <li>
+                    <li class="item">
                         <a href="#">Info</a>
                     </li>
-                    <li>
+                    <li class="item">
                         <a href="./signin.html">Login</a>
                     </li>
-                    <li>
+                    <li class="item">
                         <a href="./signup.html">Sign up</a>
                     </li>
-                    <li>
+                    <li class="item cart-button">
                         <a href="#">Cart (<span>0</span>)</a>
+                    </li>
+                    <li class="toggle">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <main>
+        <section class="hero-wrapper">
+            <div class="container">
+                <div class="herobox">
+                    <h1>Order food!</h1>
+                    <p>
+                        Indulge in Your Guilty Pleasures with JunkBank's Exclusive Junk Food Delivery Service!!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <main class="container">
             <section>
-                <img src="#" alt="Main image"/>
-                <h1>Order food!</h1>
-                <p>
-                    Indulge in Your Guilty Pleasures 
-                    with JunkBank's Exclusive Junk 
-                    Food Delivery Service!
-                </p>
-            </section>
-            <section>
-                <h2>Browse our great selection of foods!</h2>
-                <ul>
-                    <li>
-                        <img src="#" alt="food here"/>
-                        <article>
-                            <h4>Fish and chips</h4>
-                            <p>Food description....</p>
-                            <div>Price: EUR <span>15</span></div>
+                <h2 class="food-list-title">Browse our great selection of meals below!</h2>
+                <ul class="food-list">
+                    <li class="food-card">
+                        <div class="img-wrapper-col">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1920px-Good_Food_Display_-_NCI_Visuals_Online.jpg">
+                        </div>
+                        <article class="food-card-col">
+                            <h4>Pizza</h4>
+                            <p class="food-description">Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked.</p>
+                            <div class="food-price">Price: EUR <span>10</span></div>
                         </article>
-                        <form>
-                            <input 
-                                type="number" 
-                                min="1"
-                                step="1"/>
+                        <form class="add-to-cart-col">
+                            <input
+                                    type="number"
+                                    min="1"
+                                    step="1"/>
                             <button>+ Add</button>
                         </form>
                     </li>
-                    <li>
-                        <img src="#" alt="food here"/>
-                        <article>
+                    <li class="food-card">
+                        <div class="img-wrapper-col">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Fish_and_chips_blackpool.jpg/275px-Fish_and_chips_blackpool.jpg">
+                        </div>
+                        <article class="food-card-col">
                             <h4>Fish and chips</h4>
-                            <p>Food description....</p>
-                            <div>Price: EUR <span>15</span></div>
+                            <p class="food-description">Fish and chips is a hot dish consisting of fried fish in batter, served with chips. The dish originated in England, where these two components had been introduced from separate immigrant cultures.</p>
+                            <div class="food-price">Price: EUR <span>15</span></div>
                         </article>
-                        <form>
-                            <input 
-                                type="number" 
-                                min="1"
-                                step="1"/>
+                        <form class="add-to-cart-col">
+                            <input
+                                    type="number"
+                                    min="1"
+                                    step="1"/>
                             <button>+ Add</button>
                         </form>
                     </li>
-                    <li>
-                        <img src="#" alt="food here"/>
-                        <article>
-                            <h4>Fish and chips</h4>
-                            <p>Food description....</p>
-                            <div>Price: EUR <span>15</span></div>
+                    <li class="food-card">
+                        <div class="img-wrapper-col">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Fried_chicken%2C_fried_okra_and_mac_%26_cheese_from_Mary_Mac%27s_Tea_Room_in_Atlanta.jpg/1920px-Fried_chicken%2C_fried_okra_and_mac_%26_cheese_from_Mary_Mac%27s_Tea_Room_in_Atlanta.jpg">
+                        </div>
+                        <article class="food-card-col">
+                            <h4>Fried chicken</h4>
+                            <p class="food-description">Fried chicken, also known as Southern fried chicken, is a dish consisting of chicken pieces that have been coated with seasoned flour or batter and pan-fried, deep fried, pressure fried, or air fried.</p>
+                            <div class="food-price">Price: EUR <span>8</span></div>
                         </article>
-                        <form>
-                            <input 
-                                type="number" 
-                                min="1"
-                                step="1"/>
+                        <form class="add-to-cart-col">
+                            <input
+                                    type="number"
+                                    min="1"
+                                    step="1"/>
                             <button>+ Add</button>
                         </form>
                     </li>
-                    <li>
-                        <img src="#" alt="food here"/>
-                        <article>
-                            <h4>Fish and chips</h4>
-                            <p>Food description....</p>
-                            <div>Price: EUR <span>15</span></div>
+                    <li class="food-card">
+                        <div class="img-wrapper-col">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Hamburger_%28black_bg%29.jpg">
+                        </div>
+                        <article class="food-card-col">
+                            <h4>Hamburger</h4>
+                            <p class="food-description">A hamburger, or simply burger, is a food consisting of fillings—usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll.</p>
+                            <div class="food-price">Price: EUR <span>13</span></div>
                         </article>
-                        <form>
-                            <input 
-                                type="number" 
-                                min="1"
-                                step="1"/>
+                        <form class="add-to-cart-col">
+                            <input
+                                    type="number"
+                                    min="1"
+                                    step="1"/>
                             <button>+ Add</button>
                         </form>
                     </li>
@@ -109,35 +126,38 @@
         </main>
 
         <footer>
-            <section>
-                <h4>Fuud</h4>  
-            </section>
-            <section>
-                <h5>Company</h5>
-                <nav>
+            <div class="container footer-content">
+                <section>
+                    <img src="junkbanklogo.png" alt="junkbank">
+                    <h2>JunkBank</h2>
+                </section>
+                <section class="left-align-col">
+                    <h3>Company</h3>
                     <ul>
-                        <li><a href="#">About us</a></li>
+                        <li>About us</li>
                         <li>Careers</li>
                         <li>Investors</li>
-                    </ul> 
-                </nav>
-            </section>
-            <section>
-                <h5>Useful links</h5>
-                <ul>
-                    <li>About us</li>
-                    <li>Careers</li>
-                    <li>Investors</li>
-                </ul> 
-            </section>
-            <section>
-                <h5>Social</h5>
-                <ul>
-                    <li>About us</li>
-                    <li>Careers</li>
-                    <li>Investors</li>
-                </ul> 
-            </section>
+                    </ul>
+                </section>
+                <section class="left-align-col">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>About us</li>
+                        <li>Careers</li>
+                        <li>Investors</li>
+                    </ul>
+                </section>
+                <section class="left-align-col">
+                    <h3>Social</h3>
+                    <ul>
+                        <li>Facabook</li>
+                        <li>Twetter</li>
+                        <li>TikTak</li>
+                    </ul>
+                </section>
+            </div>
         </footer>
+
+        <script src="script.js"></script>
     </body>
-</html>
+</html></html>
