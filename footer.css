@@ -1,0 +1,60 @@
+footer {
+    background: linear-gradient(180deg, rgb(100,60,50) 10%, rgb(30,30,30) 90%);
+    color: white;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    position: relative;
+}
+
+footer::before {
+    content:"";
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background: url("foodbg.png") no-repeat;
+    background-size: cover;
+    opacity: 0.02;
+}
+
+.footer-content {
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.footer-content section img {
+    margin: auto;
+    display: block;
+    width: 100px;
+}
+
+.footer-content section h2 {
+    font-size: 40px;
+    padding-top: .2em;
+    padding-bottom: .5em;
+}
+
+.footer-content section ul {
+    padding: 1em 0em;
+}
+
+.footer-content section ul li {
+    margin-left: 1em;
+}
+
+@media (max-width: 992px) {
+    .footer-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-content section h2 {
+        text-align: center;
+    }
+}

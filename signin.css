@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.rawpixel.com/image_1000/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTM2OTgxMy1pbWFnZS1rd3Z4eHA5MS5qcGc.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+section {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+.logo {
+    width: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    width: 100%;
+    padding: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    background:none;
+    border: 1px solid white;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    background: rgba(255,255,255,0.2);
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+button:active {
+    background-color: rgba(255,255,255,0.4);
+}
+
+a {
+    display: inline-block;
+    padding-top: 15px;
+    color: white;
+}
+
+a:hover {
+    color: #bbb;
+}
+
+a:active {
+    color: #999;
+}

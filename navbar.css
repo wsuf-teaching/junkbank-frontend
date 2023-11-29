@@ -1,0 +1,107 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav {
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    padding: 0 15px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.item {
+    padding: 10px;
+}
+
+.item.butonn {
+    padding: 9px 5px;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.item a:hover,
+.item a:hover::after {
+    text-decoration: underline;
+}
+
+/* further styling required here */
+
+.menu li a {
+    display: block;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.toggle a i {
+    color: white;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+    display: block;
+}
+
+.cart-button {
+    border: 1px solid white;
+}
+
+.cart-button:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.cart-button:hover a {
+    text-decoration: none;
+}
+
+
+@media all and (min-width: 700px) {
+    .menu {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+    .menu li a {
+        display: inline-block;
+    }
+
+    .logo {
+        flex-grow: 1;
+    }
+
+    .item {
+        display: block;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
