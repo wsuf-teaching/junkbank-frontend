@@ -21,7 +21,7 @@
 
 .food-card::before {
     content: "";
-    background: url("foodbg.png") no-repeat;
+    background: url("/public/images/foodbg.png") no-repeat;
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -82,6 +82,10 @@
 .add-to-cart-col {
     align-self: center;
     margin-right: 1em;
+}
+
+.add-to-cart-col * {
+    margin-right: 2px;
 }
 
 .add-to-cart-col input {

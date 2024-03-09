@@ -1,4 +1,4 @@
-footer {
+.footer {
     background: linear-gradient(180deg, rgb(100,60,50) 10%, rgb(30,30,30) 90%);
     color: white;
     padding: 2em;
@@ -8,7 +8,7 @@ footer {
     position: relative;
 }
 
-footer::before {
+.footer::before {
     content:"";
     position: absolute;
     z-index: 1;
@@ -16,7 +16,7 @@ footer::before {
     right: 0px;
     left: 0px;
     bottom: 0px;
-    background: url("foodbg.png") no-repeat;
+    background: url("/public/images/foodbg.png") no-repeat;
     background-size: cover;
     opacity: 0.02;
 }

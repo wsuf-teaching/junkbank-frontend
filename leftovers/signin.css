@@ -1,4 +1,4 @@
-body {
+.body-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@ body {
     background-size:cover;
 }
 
-section {
+.login-card {
     text-align: center;
     width: 400px;
     padding: 20px;
@@ -27,18 +27,18 @@ section {
     width: 100px;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-label {
+.form label {
     width: 100%;
     padding: 8px;
 }
 
-input {
+.form input {
     width: 100%;
     padding: 8px;
     margin-bottom: 12px;
@@ -48,12 +48,12 @@ input {
     color: white;
 }
 
-input:focus {
+.form input:focus {
     outline: none;
     background: rgba(255,255,255,0.2);
 }
 
-button {
+.form button {
     width: 100%;
     padding: 8px;
     color: white;
@@ -61,24 +61,24 @@ button {
     border: none;
 }
 
-button:hover {
+.form button:hover {
     background-color: rgba(255,255,255,0.3);
 }
 
-button:active {
+.form button:active {
     background-color: rgba(255,255,255,0.4);
 }
 
-a {
+.login-card a {
     display: inline-block;
     padding-top: 15px;
     color: white;
 }
 
-a:hover {
+.login-card a:hover {
     color: #bbb;
 }
 
-a:active {
+.login-card a:active {
     color: #999;
 }
