@@ -1,0 +1,43 @@
+.cartListItem {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    margin: 1em 0em;
+    padding: 1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    border-radius: 14px;
+    align-items: center;
+}
+
+.cartListItemTitle {
+    flex-grow: 1;
+}
+
+.plusminusform {
+    margin-right: 1em;
+}
+
+.cart-item-amount {
+    padding: .8em;
+    width: 100px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.plusminus {
+    padding: .8em;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.plusminus:hover {
+    background-color: #eee;
+}
+
+.plusminus:active {
+    background-color: #ddd;
+}

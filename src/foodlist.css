@@ -117,6 +117,14 @@
     background-color: #ddd;
 }
 
+.loadingTextContainer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 992px) {
     .food-card {
         flex-direction: column;
